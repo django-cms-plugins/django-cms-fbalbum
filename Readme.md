@@ -1,9 +1,10 @@
 ##Django CMS Facebook Album Plugin
 
-This plugin lets you show the images from a Facebook Album. It presents images in a thumbnail and in colorbox when clicked over.
+Django CMS gives provides a great way to create websites. There are lots of plugin available for it.
 
+This plugin lets you show the images from a Facebook Album. It presents images in a thumbnail and uses Jquery colorbox when clicked on it.
 
-In order to use this plugin,
+In order to use this plugin follow these steps:
 
 - Add the files in the static subdirectory of the app to the main static directory of the app.
 
