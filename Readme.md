@@ -3,14 +3,18 @@
 This plugin lets you show the images from a Facebook Album. It presents images in a thumbnail and in colorbox when clicked over.
 
 
-In order to use this plugin, insert this in your base.py
+In order to use this plugin,
+
+- Add the files in the static subdirectory of the app to the main static directory of the app.
+
+- insert this in your base.py
 ```py
 INSTALLED_APPS = {
   {project}.apps.django-cms-fbalbum
 }
 ```
 
-Add the app files in your apps directory of your project
+- Add the app files in your apps directory of your project
 
 ```
 __project
