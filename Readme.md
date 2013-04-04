@@ -10,4 +10,17 @@ INSTALLED_APPS = {
 }
 ```
 
-Then add the app files in your apps directory of your project
+Add the app files in your apps directory of your project
+
+```
+__project
+  |__manage.py
+  |__requirement.txt
+  |__gondor.yml
+  |__project\
+           |
+           |__apps\
+                  |__django-cms-fbalbum
+```
+
+Then go the the Django CMS Admin panel and add this plugin at your desired placeholder.
