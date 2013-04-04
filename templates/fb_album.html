@@ -1,10 +1,11 @@
 {% load i18n sekizai_tags %}
 {% addtoblock "js" %}<script type="text/javascript" src="{{STATIC_URL}}js/jquery.min.js"></script>{% endaddtoblock %}
 {% addtoblock "js" %}<script type="text/javascript" src="{{STATIC_URL}}js/jquery.colorbox-min.js"></script>{% endaddtoblock %}
+{% addtoblock "css" %}<link rel="stylesheet" href="{{STATIC_URL}}css/colorbox.css">{% endaddtoblock %}
 {% addtoblock "css" %}
 <style>
 .small {
-    padding: 10px 10px 10px 10px;
+    padding: 10px 5px 10px 5px;
 }
 </style>
 {% endaddtoblock %}
@@ -37,11 +38,11 @@ var generateImg = function (data) {
         img = '<a href="'+big_image_url+'" class="group1" > '+'<img src="'+small_image_url+'" class="small" ' +' /></a>';
         image_stack += img;
     }
+    $(".plugin_fbalbum").append(image_stack);
     //Add Colorbox affect.
     $(document).ready(function () {
        $(".group1").colorbox({rel:'group3', transition:"fade", width:"75%", height:"75%"});
     });
-    $(".plugin_fbalbum").append(image_stack);
 }
 });
 </script>

@@ -6,8 +6,8 @@ from models import Fb
 
 class FacebookAlbumPlugin(CMSPluginBase):
     model = Fb
-    name = _("Fb Album")
-    render_template = "templates/cms_plugins/fb_album.html"
+    name = _("Facebook Album")
+    render_template = "fb_album.html"
 
     def render(self, context, instance, placeholder):
         context.update({
